@@ -12,4 +12,98 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+
+  <h1>Battle Gameplay</h1>
+
+  <p>Similar to Pokemon but you have HS mana as stamina. Every round you are gaining mana, but you are starting around 1-2 mana per monster. </p>
+
+  <h2>Axes of game design : <b>Degrees of Freedom*</b></h2>
+
+  <h3>Hard Designs</h3>
+  <ul>
+    <li><u>Base Stats [HP,ATK,SPATK,DEF,SPDEF,SPEED] : <b>2</b></u></li>
+    <dd>Can be tuned with an EV equivalent</dd>
+    <li><u>Typings : <b>2</b></u></li>
+    <dd>Enough to create uneven-ness in the type matrix.</dd>
+    <li><u>Stamina base, Stamina Gain : <b>2</b></u> </li>
+    <dd>Max Stamina should range from 5-10ish? Stamina Gain should be 0-2 per turn</dd>
+    <li><u>Abilities : <b>5</b></u> </li>
+    <dd>Really defines a monster and how to utilize it.</dd>
+    <li><u>Moves : <b>3</b></u></li>
+    <dd>More variety with Stamina now. Powerful sttacks with high stamina to offset being able to use them asap.</dd>
+  </ul>
+  <p><sub>* Degrees of freedom [0-5] refers to the amount of impact the precieved axis will be designed to have on the gameplay. The higher the numnber, the higher the impact.</sub></p>
+
+  <h3>Soft Designs (Hidden Information)</h3>
+  <ul>
+    <li>Moves</li>
+    <li>Base Stat Tuning</li>
+    <li>Some Abilities</li>
+    <li>Actions During the Turn submitted blind</li>
+    <li>Blind Pick Team? NO BANS... unless</li>
+  </ul>
+
+  <h2>Ideas</h2>
+
+  <details>
+    <summary><b>Abilities</b> (Click to Exapnd)</summary>
+
+    ## Abilities
+    <table style = "width:100%">
+      <tr>
+        <th>Ability</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Quick Reaction </td>
+        <td>Damage recieved on the turn switching in is halved.</td>
+      </tr>
+      <tr>
+        <td>Special Guard </td>
+        <td>The Opponent's STAB is ignored when they deal damage to you. </td>
+      </tr>
+      <tr>
+        <td>High Energy </td>
+        <td>STA requirements of attacks are reduced by 1. </td>
+      </tr>
+      <tr>
+        <td>Type Swap </td>
+        <td>X type moves are Y type.  </td>
+      </tr>
+      <tr>
+        <td>Copycat </td>
+        <td>Gain the effects of the item that the enemy is holding. </td>
+      </tr>
+      <tr>
+        <td>Purity </td>
+        <td>increase all stats by 1.5 if user started without Item. </td>
+      </tr>
+      <tr>
+        <td>Battle of Brawns </td>
+        <td>All damage from user calculates using users Attack and opponents Defense. </td>
+      </tr>
+      <tr>
+        <td>Battle of Wits </td>
+        <td>All damage from user calculates using users Sp. Attack and opponents Sp. Defense.  </td>
+      </tr>
+      <tr>
+        <td>Death Effect </td>
+        <td>When user dies apply x. </td>
+      </tr>
+      <tr>
+        <td>Simple </td>
+        <td>Increase all stats if you only have 1 move. </td>
+      </tr>
+      <tr>
+        <td>Split </td>
+        <td>Doubles only - When ally is knocked out you then halve your hp and create a clone of yourself in the other slot. </td>
+      </tr>
+      <tr>
+        <td>Berserk </td>
+        <td>Start with full stamina however once your stamina hits 0 you faint. </td>
+      </tr>
+    </table>
+  </details>
+
+
 </html>
