@@ -1,0 +1,132 @@
+:root {
+  --bg: #b2f1fe;
+  --title: #000000;
+  --sub_title: #138298;
+  --card: #19a7c3;
+  --text: #ffffff;
+  --shadow: #0423297c;
+  --accent: #ffffff;
+  --boarder_color: var(--card);
+  --card_p_text: #000000;
+  --pill: #5b77e8;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+
+header h1 {
+  margin: 0 0 0.5rem;
+  color: var(--title);
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+}
+
+header p {
+  margin: 0;
+  color: var(--sub_title);
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 15px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent;
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--card_p_text);
+  margin: 0 0 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--accent);
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-color: var(--boarder_color);
+  border-width: 10px;
+}
+
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: top;
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
