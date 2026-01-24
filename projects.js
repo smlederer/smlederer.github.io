@@ -1,11 +1,10 @@
 const projects = [
       {
-  title: "LEGO-FI [LINK WIP]",
-  description: "Nearest Color distance calculator script to convert image to lego tiles based on available colors on Bricklink.com",
-  url: "",
+  title: "legofi.py",
+  description: "Nearest Color distance script to convert image to lego-compatible mosaics based on colors that lego bricks are available in.",
+  url: "https://github.com/smlederer/legofi",
   image: "img/lego.jpg",
   tags: ["Python", "PIL", "BeautifulSoup"]
-  /*https://discordpy.readthedocs.io/en/stable/*/
   },
   {
     title: "SMOGON DATA MINING [LINK WIP]",
