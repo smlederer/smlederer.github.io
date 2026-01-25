@@ -7,27 +7,6 @@ const projects = [
   tags: ["Python", "PIL", "BeautifulSoup"]
   },
   {
-    title: "SMOGON DATA MINING [LINK WIP]",
-    description: "Explorations in data mining and visualizations of smogon.com/stats data to reveal edges in competitive teambuilding",
-    url: "",
-    image: "img/pkmn.jpg",
-    tags: ["Python","Polars","Matplot","ETL"]
-  },
-  {
-    title: "WAVE FUNCTION COLLAPSE GENERATION [LINK WIP]",
-    description: "Implementing WFC for randomized tile generation in the Godot game engine",
-    url: "",
-    image: "img/wfc.jpg",
-    tags: ["GDscript"]
-  },
-  {
-    title: "FANTASY FOOTBALL DATA MINING [LINK WIP]",
-    description: "Minimal REST API starter with authentication.",
-    url: "",
-    image: "img/draft.jpg",
-    tags: ["Python", "great_tables Library","Pandas", "ETL"]
-  },
-  {
   title: "DOMINION DISCORD HELPER BOT",
   description: "Discord bot that would handle game set up allowing for participants to each have the ability to ban a card",
   url: "https://github.com/smlederer/dominion_discord_bot_v2",
@@ -49,6 +28,27 @@ const projects = [
   image: "img/starship.png",
   tags: ["Godot","GDscript"]
   /*https://discordpy.readthedocs.io/en/stable/*/
+  },
+    {
+    title: "SMOGON DATA MINING [LINK WIP]",
+    description: "Explorations in data mining and visualizations of smogon.com/stats data to reveal edges in competitive teambuilding",
+    url: "",
+    image: "img/pkmn.jpg",
+    tags: ["Python","Polars","Matplot","ETL"]
+  },
+  {
+    title: "WAVE FUNCTION COLLAPSE GENERATION [LINK WIP]",
+    description: "Implementing WFC for randomized tile generation in the Godot game engine",
+    url: "",
+    image: "img/wfc.jpg",
+    tags: ["GDscript"]
+  },
+  {
+    title: "FANTASY FOOTBALL DATA MINING [LINK WIP]",
+    description: "Minimal REST API starter with authentication.",
+    url: "",
+    image: "img/draft.jpg",
+    tags: ["Python", "great_tables Library","Pandas", "ETL"]
   },
 ];
 
