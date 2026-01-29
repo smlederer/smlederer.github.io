@@ -16,54 +16,63 @@ const projects = [
   },
     {
   title: "DEFEND'INN",
-  description: "Discord bot that would handle game set up allowing for participants to each have the ability to ban a card",
+  description: "Strategy game where you take up the role as a tavern barkeep having to fend off monsters at night.",
   url: "https://samldrr.itch.io/defendinn",
   image: "img/defendinn.jpg",
   tags: ["Godot","GDscript"]
   },
     {
   title: "STARSHIP HIJACKERS",
-  description: "Discord bot that would handle game set up allowing for participants to each have the ability to ban a card",
+  description: "A space-themed action game where players must hijack starships where the controls are in a foreign language.",
   url: "https://zombz.itch.io/starship-hijackers",
   image: "img/starship.png",
   tags: ["Godot","GDscript"]
-  /*https://discordpy.readthedocs.io/en/stable/*/
   },
     {
-    title: "SMOGON DATA MINING [LINK WIP]",
+    title: "SMOGON DATA MINING",
     description: "Explorations in data mining and visualizations of smogon.com/stats data to reveal edges in competitive teambuilding",
     url: "",
     image: "img/pkmn.jpg",
-    tags: ["Python","Polars","Matplot","ETL"]
+    tags: ["Python","Polars","Matplot","ETL"],
+    wip: true
   },
   {
-    title: "WAVE FUNCTION COLLAPSE GENERATION [LINK WIP]",
+    title: "WAVE FUNCTION COLLAPSE GENERATION",
     description: "Implementing WFC for randomized tile generation in the Godot game engine",
     url: "",
     image: "img/wfc.jpg",
-    tags: ["GDscript"]
+    tags: ["GDscript"],
+    wip: true
   },
   {
-    title: "FANTASY FOOTBALL DATA MINING [LINK WIP]",
-    description: "Minimal REST API starter with authentication.",
+    title: "FANTASY FOOTBALL DATA MINING",
+    description: "Data mining and analysis tools for fantasy football, extracting insights from player statistics to inform draft and trade decisions.",
     url: "",
     image: "img/draft.jpg",
-    tags: ["Python", "great_tables Library","Pandas", "ETL"]
+    tags: ["Python", "great_tables Library","Pandas", "ETL"],
+    wip: true
   },
 ];
 
 const container = document.getElementById("projects");
 
 projects.forEach(project => {
-  const card = document.createElement("a");
+  const isWip = project.wip || !project.url;
+  const card = document.createElement(isWip ? "div" : "a");
   card.className = "card";
-  card.href = project.url;
-  card.target = "_blank";
-  card.rel = "noopener";
+  
+  if (!isWip) {
+    card.href = project.url;
+    card.target = "_blank";
+    card.rel = "noopener";
+  } else {
+    card.classList.add("wip");
+  }
 
   card.innerHTML = `
     <div class="card-image">
-      <img src="${project.image}" alt="${project.title} preview" />
+      ${isWip ? '<span class="wip-badge">Under Construction</span>' : ''}
+      <img src="${project.image}" alt="${project.title} preview" loading="lazy" />
     </div>
     <div class="card-content">
       <h2>${project.title}</h2>
