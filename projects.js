@@ -1,5 +1,16 @@
 const projects = [
-      {
+   
+{title: "PIZZA",
+    description: "Spin to Win! Top 2% (out of 3500 entries) in The Very Serious Juniper Dev Game Jam 2026",
+    url: "https://samldrr.itch.io/pizza",
+    image: "img/pizza_image.png",
+    tags: ["Video Game","Godot", "GDscript","Aseprite"]},  
+{title: "CORPORATE MEMPHIS",
+    description: "Minigame gauntlet for the gamejam theme of 'Strange Place'. Top 2% (out of 1500 entries) in Brackey's Game Jam 2026.1",
+    url: "https://ultralightleam.itch.io/corporate-memphis",
+    image: "img/cm.gif",
+    tags: ["Video Game","Godot", "GDscript","Aseprite"]},
+  {
   title: "legofi.py",
   description: "Nearest Color distance script to convert image to lego-compatible mosaics based on colors that lego bricks are available in.",
   url: "https://github.com/smlederer/legofi",
@@ -14,19 +25,26 @@ const projects = [
   tags: ["Python", "Discord.py API","Python Image Libary"]
   /*https://discordpy.readthedocs.io/en/stable/*/
   },
+      {
+  title: "My advent calendar was full of code this year",
+  description: "Musings on learning how to learn using 2023 Advent of Code",
+  url: "https://substack.com/home/post/p-139972009",
+  image: "img/tree.png",
+  tags: ["Python"]
+  },
     {
   title: "DEFEND'INN",
   description: "Strategy game where you take up the role as a tavern barkeep having to fend off monsters at night.",
   url: "https://samldrr.itch.io/defendinn",
   image: "img/defendinn.jpg",
-  tags: ["Godot","GDscript"]
+  tags: ["Video Game","Godot","GDscript"]
   },
     {
   title: "STARSHIP HIJACKERS",
   description: "A space-themed action game where players must hijack starships where the controls are in a foreign language.",
   url: "https://zombz.itch.io/starship-hijackers",
   image: "img/starship.png",
-  tags: ["Godot","GDscript"]
+  tags: ["Video Game","Godot","GDscript"]
   },
     {
     title: "SMOGON DATA MINING",
@@ -51,7 +69,7 @@ const projects = [
     image: "img/draft.jpg",
     tags: ["Python", "great_tables Library","Pandas", "ETL"],
     wip: true
-  },
+  }
 ];
 
 const container = document.getElementById("projects");
